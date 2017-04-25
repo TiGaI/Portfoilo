@@ -21,7 +21,7 @@ var contactSchema = new mongoose.Schema({
   timestamps: true
 })
 
-var Contact = mongoose.model("Contact", eventSchema)
+var Contact = mongoose.model("Contact", contactSchema)
 
 module.exports = {
   Contact: Contact

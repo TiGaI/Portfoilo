@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
     "express-validator": "^3.1.2",
     "hbs": "^4.0.1",
+    "helmet": "^3.5.0",
     "mongoose": "^4.9.0",
-    "sendgrid": "^4.8.2",
+    "path": "^0.12.7",
+    "sendgrid": "^4.8.2"
   }
 }
