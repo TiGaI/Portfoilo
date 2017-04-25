@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-
+var path = require('path');
 var models = require('./models/models');
 var compression = require('compression');
 var helmet = require('helmet')
@@ -9,7 +9,7 @@ var helmet = require('helmet')
 var routes = require('./routes/index');
 
 var mongoose = require('mongoose');
-var connect = process.env.MONGODB_URI || require('./models/connect');
+var connect = process.env.MONGODB_URI;
 
 mongoose.connect(connect);
 
@@ -46,23 +46,6 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
 
 app.listen(3000, function() {
   console.log('listening on *:3000');
