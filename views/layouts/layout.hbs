@@ -2,24 +2,87 @@
 <html>
 <head>
   <title>{{title}}</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='../../css/styles.css' />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Titillium+Web:400,600' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <link rel='stylesheet' href='../../node_module/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='javascript' href='../../node_module/bootstrap/dist/js/bootstrap.min.js' />
 
 </head>
 <body>
   <div class="container-fluid">
-    <section>
-      <div class="container">
+    <section id="header">
+      <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#" id="about">About</a></li>
+          <li><a href="#" id="projects">Projects</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
+        </ul>
+
+        </nav>
+    </section>
+    <section id="row1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <h1 class="main-header">Build Your App Today</h1>
+              <h3 class="main-description">We build mobile and web apps</h3>
+            </div>
+      </div>
+    </div>
+  </section>
+    <section id="row2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <h1 class="mobile-header">Mobile</h1>
+              <h3 class="mobile-description">We build mobile applications with React Native</h3>
+            </div>
         <div class="col-md-4">
-          <span class="glyphicon glyphicon-star"></span>
-            <h4 class="title-slate">Ideas</h4>
-              <p class="summary">I collaborate with clients and peers to transform ideas into real applications. This is where the user experiences begins.</p>
+          <h3 class="mobile-title">Newvuew.com</h3>
+          <img src="../../images/iphone.png" style="height: 500px; width: 250px; display: block; margin: 0 auto;">
+              <h5 class="summary-mobile">An application that finds locals that share the same passions as you. Connect with them and collaborate or create a project from sports, art, to film.</h5>
+            </div>
+        <div class="col-md-4">
+          <h3 class="mobile-title">Docit.com</h3>
+          <img src="../images/iphone.png" style="height: 500px; width: 250px; display: block; margin: 0 auto;">
+              <h5 class="summary-mobile">A mobile application that manages the time you spend on every activity. The app will track your activities and provide you feedback on the best way to save time.</h5>
+            </div>
+        <div class="col-md-4">
+          <h3 class="mobile-title">Pregreat.com</h3>
+          <img src="../images/iphone.png" style="height: 500px; width: 250px; display: block; margin: 0 auto;">
+              <h5 class="summary-mobile">A website site that shows the journey of Junjie Jiang on his path the greatness. The name might say pregreat for now, but in the future it will just be great.</h5>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <section id="row3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+              <h1 class="laptop-header">Web</h1>
+              <h3 class="laptop-description">We build full stack web applications</h3>
+            </div>
+        <div class="col-md-4">
+          <h3 class="laptop-title">Newvuew.com</h3>
+          <img src="../../images/macbook.png" style="height: 200px; width: 350px; display: block; margin: 0 auto;">
+              <h5 class="summary-laptop">An application that finds locals that share the same passions as you. Connect with them and collaborate or create a project from sports, art, to film.</h5>
+            </div>
+        <div class="col-md-4">
+          <h3 class="laptop-title">Docit.com</h3>
+          <img src="../images/macbook.png" style="height: 200px; width: 350px; display: block; margin: 0 auto;">
+              <h5 class="summary-laptop">A mobile application that manages the time you spend on every activity. The app will track your activities and provide you feedback on the best way to save time.</h5>
+            </div>
+        <div class="col-md-4">
+          <h3 class="laptop-title">Pregreat.com</h3>
+          <img src="../images/macbook.png" style="height: 200px; width: 350px; display: block; margin: 0 auto;">
+              <h5 class="summary-laptop">A website site that shows the journey of Junjie Jiang on his path the greatness. The name might say pregreat for now, but in the future it will just be great.</h5>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
 </body>
 

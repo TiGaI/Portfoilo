@@ -1,3 +1,18 @@
+body{
+  background: url('../images/eric1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container-fluid {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 h1{
   font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
@@ -25,4 +40,88 @@ h6{
 p{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
+}
+.main-header{
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.main-description{
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+.laptop-title{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 300;
+}
+.mobile-title{
+  text-align: center;
+  margin-bottom: 5rem;
+  color: white;
+  font-weight: 300;
+}
+.mobile-header{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.mobile-description{
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+  font-weight: 400;
+}
+.laptop-header{
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.laptop-description{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 400;
+}
+.title-slate{
+  text-align: center;
+}
+.summary-mobile{
+  line-height: 1.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+.summary-laptop{
+  line-height: 1.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: center;
+}
+#row1{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row2{
+  background-color: #3C5064;
+  padding: 10rem;
+}
+#row3{
+  background-color: #3CD0AC;
+  padding: 10rem;
+}
+#header{
+  background: url('../images/iphone.png') no-repeat center top #000;
 }
