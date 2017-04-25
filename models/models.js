@@ -10,7 +10,9 @@ var userActionSchema = new mongoose.Schema({
     ref: 'EventCard'
   },
   likeOrDislike: Boolean // true refers to like, false refers to dislike.
-}, {timestamps: true})
+}, {
+  timestamps: true
+})
 
 var userSchema = new mongoose.Schema({
   //How can we keep track of User Activity?
@@ -36,26 +38,35 @@ var userSchema = new mongoose.Schema({
   },
   image: [String],
   videos: [String],
-  activeEvents: [{type: mongoose.Schema.Types.ObjectId, ref: 'EventCard'}],
-  connections: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
+  activeEvents: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'EventCard'
+  }],
+  connections: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }],
   admin: {
     type: Boolean,
     default: false
   },
   rating: {
     type: Number
-}}, { timestamps: true }
+  }
+}, {
+  timestamps: true
+}
 );
 
 var eventSchema = new mongoose.Schema({
   title: {
     type: String,
-    // required: true
+  // required: true
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    // required: true
+  // required: true
   },
   description: {
     type: String,
@@ -71,12 +82,20 @@ var eventSchema = new mongoose.Schema({
   location: String,
   image: String,
   video: String,
-  usersAttending: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
+  usersAttending: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }],
   // category: String
   likes: [],
-  dislike:[],
-  pendingConnections: [{type: mongoose.Schema.Types.ObjectId, ref: 'User'}]
-}, {timestamps: true});
+  dislike: [],
+  pendingConnections: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }]
+}, {
+  timestamps: true
+});
 
 var messageSchema = new mongoose.Schema({
   body: {
@@ -93,38 +112,13 @@ var messageSchema = new mongoose.Schema({
     required: true,
     ref: 'User'
   },
-  dateCreated :{
+  dateCreated: {
     type: Date,
     required: true
   }
 
 });
 
-
-//Add Schema Methods
-
-userSchema.methods.isConnected = function(idToCheck, callback){
-  var connection = this.connections.includes(idTOCheck)
-  callback(null, connection)
-};
-
-userSchema.methods.getConnectionsSorted = function(callback){
-  var allconnections = this.connections.reverse();
-  callback(err, allConnections);
-};
-
-userSchema.methods.findSeenEvents = function(callback){
-  UserAction.find({user: this._id}, function(err, actions){
-    if (err) res.send(err)
-    var seenEvents = actions.map(function(action){
-      return action.eventCard;
-    })
-    callback(null, seenEvents)
-  })
-}
-
-// userSchema.statics.findByNumActiveCards
-// userSchema.virtual.getActivity =
 
 
 var Message = mongoose.model("Message", messageSchema);
