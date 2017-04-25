@@ -2,10 +2,87 @@
 <html>
 <head>
   <title>{{title}}</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Titillium+Web:400,600' rel='stylesheet' type='text/css'>
+  <!-- need to improve -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+ 
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/assets/css/styles.css' />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 </head>
+
+<style type="text/css">
+
+  #nextProject{
+      background-color: #EEEEEE;
+  }
+
+  #nextProject h5{
+    text-transform: uppercase;
+  }
+
+  #nextProject h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  #nextProject a{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #262526;
+    
+  }
+
+  #videoText{
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
+
+
+  #copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #383632;
+  }
+
+  #copyright p{
+    font-size: 1.25rem;
+    display:inline;
+  }
+
+  #copyright a{
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: #383632;
+  }
+
+  #videoDiv {
+    margin: auto;
+    overflow: hidden;
+    max-height: 383px;
+    padding: 0;
+  }
+
+  @media only screen and (max-width : 992px) {
+  #videoDiv{display:none;}
+  }
+
+  @media only screen and (min-width : 991px) {
+  #videoDiv{display:none;}
+  }
+
+  .embed-responsive{
+    min-height: 383px;
+  }
+
+</style>
+
+
 <body>
   <div class="container-fluid">
     {{{body}}}
@@ -14,18 +91,64 @@
 
 <footer>
 
-  <section id='#shareIcon'>
-      
+  <section id='shareicon'>
+                <div class="text-center">
+                <h6 class="shareText">share</h6>
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Contact Us"><i class="fa fa-envelope"></i></a></li>
+                    </ul>       
+        </div>
   </section>
 
-  <section id='#nextProject'>
+  <section id='nextProject'>
+
+      <div id='videoText' class="text-center">
+          <h5>Doc It</h5>
+          <h1>Next Project</h1>
+          <a href="#">see more</a>
+      </div>
+
+    <div id="videoDiv" class='embed-responsive'>      
+                       <video id="video" autoplay="" loop="loop">
+                        <source src="/assets/video/nextProject.mp4" type="video/mp4">
+                        There was a problem loading video on your browser.
+                      </video>
+     </div>
 
   </section>
 
-  <section id='#copyRigth'>
+  <section id='copyright'>
+      <div class="text-center">
 
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> J&E 2017 - 1080 Folsom Street  •  </p>
+          <a href="#">JEProduct@gmail.com</a>
+      </div>
   </section>
 
 </footer>
+
+<script type="text/javascript">
+
+                $("#nextProject").on('mouseover', function () 
+                        {                  
+                            $('#videoText').css("display", "none");
+                            $("#videoDiv").css("display", "block"); //
+                            // $('#videoDiv').children("video")[0].play();
+                          })
+
+                $("#nextProject").on('mouseout', function (){
+
+                              // var el = $('#videoDiv').children("video")[0].play();
+                              // el.pause();
+                              // el.currentTime = 0;
+                              $('#videoText').css("display", "block");
+                              $("#videoDiv").css("display", "none"); 
+                           
+                         })                   
+                  
+</script>
 
 </html>

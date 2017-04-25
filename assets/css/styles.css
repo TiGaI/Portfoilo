@@ -26,3 +26,77 @@ p{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
+
+/*footer*/
+  #shareicon{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    height: 100%;
+  }
+
+  #shareicon ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+  }
+
+ #shareicon ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+ 
+  #shareicon .social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+  }
+  #shareicon .social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+  }
+
+  #shareicon .social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  #shareicon .social-circle i {
+    color: #262526;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+
+  #shareicon a {
+   background-color: transparent; 
+   border: 2px solid #262526;
+  }
+ 
+
+  #shareicon .shareText{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+
