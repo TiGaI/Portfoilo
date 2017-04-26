@@ -26,7 +26,10 @@ p{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
-
+span{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
 /*footer*/
   #shareicon{
     margin-top: 50px;
