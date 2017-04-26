@@ -5,6 +5,21 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
+.navbar-custom {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 15px;
+    color: white;
+}
+.header-links{
+  color: white;
+  text-shadow: 1px 1px grey;
+}
+.header-links:hover{
+  color: #3F8EFF;
+  background-color: none;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -12,6 +27,14 @@ html, body {
 .container-fluid {
    padding: 0 !important;
    margin: 0 !important;
+}
+.navbar-right{
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 h1{
   font-size: 4rem;
@@ -62,19 +85,21 @@ p{
 .mobile-title{
   text-align: center;
   margin-bottom: 5rem;
-  color: white;
+  color: black;
   font-weight: 300;
+  transition: all .2s ease-in-out;
 }
+.mobile-title:hover { transform: scale(2); }
 .mobile-header{
   text-align: center;
-  color: white;
+  color: black;
   font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 .mobile-description{
   text-align: center;
-  color: white;
+  color: black;
   margin-bottom: 5rem;
   font-weight: 400;
 }
@@ -97,10 +122,21 @@ p{
   font-size: 1.75rem;
   font-family: 'Montserrat', sans-serif;
   margin-top: 5rem;
-  text-align: center;
-  color: white;
+  text-align: justify;
+  color: black;
   font-weight: 300;
 }
+.summary-mobile-popup{
+  line-height: 2.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: justify;
+  color: black;
+  font-weight: 300;
+  margin: 5rem;
+}
+
 .summary-laptop{
   line-height: 1.8;
   font-size: 1.75rem;
@@ -115,13 +151,54 @@ p{
   align-items: center;
 }
 #row2{
-  background-color: #3C5064;
+  background-color: white;
   padding: 10rem;
 }
 #row3{
   background-color: #3CD0AC;
   padding: 10rem;
 }
-#header{
-  background: url('../images/iphone.png') no-repeat center top #000;
+#row5{
+  background-color: white;
+  padding: 10rem;
+}
+#row4-laptop1, #row4-laptop2, #row4-laptop3{
+  background-color: white;
+  transition: all .3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+}
+#row2-mobile1, #row2-mobile2, #row2-mobile3{
+  background-color: white;
+  transition: all .3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+}
+.laptop1-container {
+   position: relative;
+}
+.tag {
+   position: absolute;
+   top: 0px;
+   z-index: 2;
+   width:400px;
+   margin-left:-200px;
+   left:35%;
+   background-color: white;
+}
+.glyphicon{
+       color: #DB4C3F;
+       font-size: 4.0rem;
+}
+.tasks{
+  text-align: center;
+}
+.summary-task{
+  line-height: 2.0;
+  font-size: 1.50rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #818889;
 }
