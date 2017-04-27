@@ -1,3 +1,48 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.backgroundPicture {
+    background: url('../images/eric1.jpg') center no-repeat;
+     margin:0 auto; height:auto;
+}
+.navbar-custom {
+    background-color: transparent;
+    color: white;
+}
+.header-links{
+  color: white;
+  text-shadow: 1px 1px grey;
+}
+.header-links:hover{
+  color: #3F8EFF;
+  background-color: none;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container-fluid {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.navbar {
+  min-height: 0;
+  height: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.navbar-right{
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
 h1{
   font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
@@ -26,3 +71,364 @@ p{
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
+span{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*footer*/
+  
+
+/*Next project scene*/
+
+  #nextProject{
+      background-color: #EEEEEE;
+  }
+
+  #nextProject h5{
+    text-transform: uppercase;
+  }
+
+  #nextProject h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  #nextProject a{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #262526;
+    
+  }
+
+  #videoText{
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
+
+
+  /*last part of the footer*/
+
+  #copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #383632;
+  }
+
+  #copyright p{
+    font-size: 1.25rem;
+    display:inline;
+  }
+
+  #copyright a{
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: #383632;
+  }
+
+  #videoDiv {
+    margin: auto;
+    overflow: hidden;
+    max-height: 383px;
+    padding: 0;
+  }
+
+  @media only screen and (max-width : 992px) {
+  #videoDiv{display:none;}
+  }
+
+  @media only screen and (min-width : 991px) {
+  #videoDiv{display:none;}
+  }
+
+  .embed-responsive{
+    min-height: 383px;
+  }
+
+
+  /*testimonial section*/
+
+
+  #testimonial .shareText{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #testimonial h1{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    color: #333333;
+    font-weight: lighter;
+  }
+
+  .ipadleft {
+    background-color: #EBEEF3;
+    margin-bottom: 20px;
+  }
+
+  .citeText:before {
+      content: "\2014 \2009";
+  }
+  .citeText{
+    font-size: 0.7rem;
+    position: relative;
+    top: -5px;
+  }
+  .testimonialText{
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .ipadImage{
+    display: block;
+    margin: auto;
+    height: 285px;
+  }
+  #testimonial .textRight{
+    height: 285px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+  }
+  #testimonial .nameText{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .testimonialText:before{
+    content: "\201C";
+    font-size: 80px;
+    position: relative;
+    top: 30px;
+    padding-top: -30px;
+    margin-right: 5px;
+  }
+  .img-circle{
+    border: 2px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  #monitor .monitor{
+    background-color: #E2E5EA;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /*social media icons*/
+  #shareicon{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    height: 100%;
+  }
+
+  #shareicon ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+  }
+
+ #shareicon ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+ 
+  #shareicon .social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+  }
+  #shareicon .social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+  }
+
+  #shareicon .social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  #shareicon .social-circle i {
+    color: #262526;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+
+  #shareicon a {
+   background-color: transparent; 
+   border: 2px solid #262526;
+  }
+ 
+
+  #shareicon .shareText{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+.main-header{
+  text-align: center;
+  color: white;
+  font-size: 8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.main-description{
+  text-align: center;
+  color: white;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+.laptop-title{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 300;
+}
+.mobile-title{
+  text-align: center;
+  margin-bottom: 5rem;
+  color: black;
+  font-weight: 300;
+  transition: all .2s ease-in-out;
+}
+.mobile-title:hover { transform: scale(2); }
+.mobile-header{
+  text-align: center;
+  color: black;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.mobile-description{
+  text-align: center;
+  color: black;
+  margin-bottom: 5rem;
+  font-weight: 400;
+}
+.laptop-header{
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.laptop-description{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 400;
+}
+.title-slate{
+  text-align: center;
+}
+.summary-mobile{
+  line-height: 1.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: justify;
+  color: black;
+  font-weight: 300;
+}
+.summary-mobile-popup{
+  line-height: 2.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: justify;
+  color: black;
+  font-weight: 300;
+  margin: 5rem;
+}
+
+.summary-laptop{
+  line-height: 1.8;
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  text-align: center;
+}
+#row1{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#row2{
+  background-color: white;
+  padding: 10rem;
+}
+#row3{
+  background-color: #3CD0AC;
+  padding: 10rem;
+}
+#row5{
+  background-color: white;
+  padding: 10rem;
+}
+#row4-laptop1, #row4-laptop2, #row4-laptop3{
+  background-color: white;
+  transition: all .3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+}
+#row2-mobile1, #row2-mobile2, #row2-mobile3{
+  background-color: white;
+  transition: all .3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+}
+.laptop1-container {
+   position: relative;
+}
+.tag {
+   position: absolute;
+   top: 0px;
+   z-index: 2;
+   width:400px;
+   margin-left:-200px;
+   left:35%;
+   background-color: white;
+}
+.glyphicon{
+       color: #DB4C3F;
+       font-size: 4.0rem;
+}
+.tasks{
+  text-align: center;
+}
+.summary-task{
+  line-height: 2.0;
+  font-size: 1.50rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #818889;
+}
+

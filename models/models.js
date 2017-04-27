@@ -9,14 +9,14 @@ var contactSchema = new mongoose.Schema({
     type: String,
     require: true
   },
-  title: {
+  interested: {
     type: String,
     require: true
   },
   content: {
     type: String,
     require: true
-  }
+  },
 }, {
   timestamps: true
 })

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>J&E Contact Us</title>
+</head>
+
+<style type="text/css">
+
+.container{
+	max-width: 700px; 
+}
+
+label{
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	margin-bottom: 0px;
+}	
+input{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+
+textarea.form-control{
+	min-height: 100px;
+}	
+
+.form-control{
+	border-radius: 0px;
+}
+ 
+/* Send Button Styles */
+  .form-btn{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding:15px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color:white;
+    background:#262526;
+    border:none;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#101010;
+    color: white;
+  }
+
+  .hidden{
+    display:none;
+	}
+
+	#contact h6{
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+
+</style>
+
+
+<body>
+
+<section id='contact'>
+	
+
+<div class="container" style="margin-top: 50px; margin-bottom: 180px;">
+
+<h6 class='text-center'>Have a project?</h6>
+
+
+                <div class="contact-form">
+                   <form action="/contact" method="post" enctype="multipart/form-data">
+                        <div class="col-sm-6 col-xs-12">
+                       		<label>Your Name *</label>
+                        	<input type="text" value="{{body.name}}" name="name" class="form-control">
+                        </div>
+
+                        <div class="col-sm-6 col-xs-12">
+                        	<label>Your Email *</label>
+                            <input type="text" value="{{body.email}}" name="email" class="form-control">             
+                        </div>
+
+						<div class="col-sm-12 col-xs-12">
+						  <label for="sel1">What are you interested in:</label>
+						  <select class="form-control" id="sel1">
+						    <option>Need a website</option>
+						    <option>Need an app</option>
+						    <option>Question about our work</option>
+						    <option>Other</option>
+						  </select>
+						</div>
+
+						<div class="col-sm-12 col-xs-12">
+						  <label>Your Message *</label>
+						  <textarea type="text" value="{{body.content}}" placeholder='Tell us more detail' name="content" class="form-control"></textarea>
+						</div>
+
+                        <div class="col-xs-12">
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">SEND</button> 
+                        </div>
+
+           
+                    </form>
+
+                </div><!-- End Contact Form Area -->
+   </div>
+
+
+</section>
+
+</body>
+</html>

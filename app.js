@@ -1,4 +1,8 @@
 var express = require('express');
+
+var flash = require('connect-flash');
+var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+
 var bodyParser = require('body-parser');
 var path = require('path');
 var models = require('./models/models');
@@ -17,6 +21,18 @@ var app = express();
 
 app.use(compression());
 app.use(helmet());
+app.use(flash());
+app.use('/assets', express.static(__dirname + '/assets')); // redirect root
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
+app.use('/fonts', express.static(__dirname + '/node_modules/bootstrap/dist/fonts')); // redirect JS jQuery
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
+// Route that creates a flash message using custom middleware
+app.all('/express-flash', function(req, res) {
+  req.flash('error', 'This is a flash message using the express-flash module.');
+  res.redirect(301, '/contact');
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,17 +50,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-app.use(express.static(path.join(__dirname, 'public')));
-
-
 app.use('/', routes);
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
 
 
 app.listen(3000, function() {
