@@ -1,15 +1,17 @@
-$("#nextProject").on('mouseover', function() {
-  $('#videoText').css("display", "none");
-  $("#videoDiv").css("display", "block"); //
-// $('#videoDiv').children("video")[0].play();
-})
-
-$("#nextProject").on('mouseout', function() {
-
-  // var el = $('#videoDiv').children("video")[0].play();
-  // el.pause();
-  // el.currentTime = 0;
-  $('#videoText').css("display", "block");
-  $("#videoDiv").css("display", "none");
+$("#seemore").click(function() {
+  event.preventDefault();
+  $('#videoText').fadeOut("slow", function() {
+    var div = $("<div id='videoDiv' class='embed-responsive'><video id='videoVideo' onClick='playPause();' autoplay='' loop='loop'><source src='/assets/video/nextProject.mp4' type='video/mp4'>There was a problem loading video on your browser.</video></div>").hide();
+    $('#videoText').replaceWith(div);
+    $('#videoDiv').fadeIn("slow");
+  });
 
 })
+
+function playPause() {
+  var myVideo = document.getElementById("videoVideo");
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}

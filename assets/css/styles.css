@@ -10,15 +10,13 @@
 }
 .navbar-custom {
     background-color: transparent;
-    color: white;
+    color: #FAFAFA;
 }
 .header-links{
-  color: white;
-  text-shadow: 1px 1px grey;
+  color: #FAFAFA;
 }
 .header-links:hover{
-  color: #3F8EFF;
-  background-color: none;
+  color: #FAFAFA;
 }
 
 html, body {
@@ -137,10 +135,6 @@ span{
   }
 
   @media only screen and (max-width : 992px) {
-  #videoDiv{display:none;}
-  }
-
-  @media only screen and (min-width : 991px) {
   #videoDiv{display:none;}
   }
 
@@ -416,7 +410,7 @@ span{
    background-color: white;
 }
 .glyphicon{
-       color: #DB4C3F;
+       color: #60ACAB;
        font-size: 4.0rem;
 }
 .tasks{
