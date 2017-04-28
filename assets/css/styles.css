@@ -50,19 +50,19 @@ h2{
   font-family: 'Montserrat', sans-serif;
 }
 h3{
-  font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
-}
-h4{
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
+h4{
+  font-size: 2.0rem;
+  font-family: 'Montserrat', sans-serif;
+}
 h5{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 h6{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: 'Montserrat', sans-serif;
 }
 p{
@@ -75,7 +75,7 @@ span{
 }
 
 /*footer*/
-  
+
 
 /*Next project scene*/
 
@@ -99,7 +99,7 @@ span{
     text-transform: uppercase;
     text-decoration: underline;
     color: #262526;
-    
+
   }
 
   #videoText{
@@ -232,7 +232,7 @@ span{
     display: inline;
     margin: 0 5px;
   }
- 
+
   #shareicon .social-circle li a {
     display:inline-block;
     position:relative;
@@ -272,10 +272,10 @@ span{
   }
 
   #shareicon a {
-   background-color: transparent; 
+   background-color: transparent;
    border: 2px solid #262526;
   }
- 
+
 
   #shareicon .shareText{
     font-size: 1.3rem;
@@ -301,17 +301,25 @@ span{
 }
 .laptop-title{
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-weight: 300;
+}
+#mobile2{
+  background: center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .mobile-title{
-  text-align: center;
-  margin-bottom: 5rem;
-  color: black;
-  font-weight: 300;
-  transition: all .2s ease-in-out;
+  color: #333333;
+  font-weight: 500;
+  font-size: 42px;
 }
-.mobile-title:hover { transform: scale(2); }
 .mobile-header{
   text-align: center;
   color: black;
@@ -327,23 +335,24 @@ span{
 }
 .laptop-header{
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 4rem;
   font-family: 'Montserrat', sans-serif;
 }
 .laptop-description{
   text-align: center;
   margin-bottom: 5rem;
+  font-size: 2rem;
   font-weight: 400;
+  color: grey;
 }
 .title-slate{
   text-align: center;
 }
 .summary-mobile{
   line-height: 1.8;
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 5rem;
   text-align: justify;
   color: black;
   font-weight: 300;
@@ -375,15 +384,13 @@ span{
 }
 #row2{
   background-color: white;
-  padding: 10rem;
 }
 #row3{
-  background-color: #3CD0AC;
-  padding: 10rem;
+  background-color: lightgrey;
 }
 #row5{
   background-color: white;
-  padding: 10rem;
+  padding: 2rem;
 }
 #row4-laptop1, #row4-laptop2, #row4-laptop3{
   background-color: white;
@@ -411,7 +418,7 @@ span{
 }
 .glyphicon{
        color: #60ACAB;
-       font-size: 4.0rem;
+       font-size: 3.0rem;
 }
 .tasks{
   text-align: center;
@@ -425,4 +432,14 @@ span{
   text-align: center;
   color: #818889;
 }
-
+.mobile-block{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+  padding: 100px;
+}
+.mobile-image{
+  padding: 0 !important;
+  margin: 0 !important;
+}
