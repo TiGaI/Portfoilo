@@ -15,11 +15,11 @@ $("#review").click(function() {
   console.log('clickedddddd');
   $('html, body').animate({
     scrollTop: $("#testimonialNew").offset().top
-  }, 1500);
+  }, 2500);
 });
 $("#contact").click(function() {
   console.log('clickedddddd');
   $('html, body').animate({
     scrollTop: $("#shareicon").offset().top
-  }, 1500);
+  }, 2500);
 });
